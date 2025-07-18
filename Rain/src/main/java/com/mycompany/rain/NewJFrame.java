@@ -190,7 +190,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel19.setText("No file chosen.");
         getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 479, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(246, 206, 206));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
