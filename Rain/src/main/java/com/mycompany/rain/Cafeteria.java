@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 public class Cafeteria extends javax.swing.JFrame {
 
     /**
-     * Creates new form Tachyon
+     * Creates new form Cafeteria
      */
     public Cafeteria() {
         initComponents();
@@ -33,161 +33,170 @@ public class Cafeteria extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        txtOption = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        txtFood = new javax.swing.JTextField();
-        txtFPrice = new javax.swing.JTextField();
-        txtQuantity = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtOpt = new javax.swing.JTextField();
+        btnConfirm = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        txtQTY = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("CAFETERIA");
+        jLabel1.setText("CAFETERIA MENU");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel2.setText("MENU");
+        jLabel2.setText("FOOD");
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel3.setText("Food");
+        jLabel3.setText("[1] Hotdog - P10");
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel4.setText("Hotdog - ₱10");
+        jLabel4.setText("[2] Siomai - P7");
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel5.setText("Siopai - ₱7");
+        jLabel5.setText("DRINKS");
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel6.setText("OPTION:");
+        jLabel6.setText("[3] Coke - P20");
 
-        jButton1.setText("CHOOSE");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jLabel7.setText("[4] Water - P15");
+
+        jLabel8.setText("OPTION:");
+
+        btnConfirm.setText("CONFIRM");
+        btnConfirm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnConfirmActionPerformed(evt);
             }
         });
 
-        txtFood.setEditable(false);
-
-        txtFPrice.setEditable(false);
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel7.setText("QUANTITY:");
-
-        jButton2.setText("CHECK");
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel8.setText("CASH: ");
+        jLabel9.setText("QUANTITY:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 293, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGap(306, 306, 306))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(324, 324, 324))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtOption, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addContainerGap()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel4))
+                                .addGap(108, 108, 108)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel5)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(101, 101, 101)
+                                .addComponent(jLabel1)))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtQuantity, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(txtFood))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(txtFPrice))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(jButton2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnConfirm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel9)
+                                    .addComponent(jLabel8))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtOpt)
+                                    .addComponent(txtQTY))))))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(12, 12, 12)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtOption, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtFood, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtFPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4)
                     .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(67, Short.MAX_VALUE))
+                    .addComponent(txtOpt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(txtQTY, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                .addComponent(btnConfirm)
+                .addGap(21, 21, 21))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int opt = Integer.parseInt(txtOption.getText());
-        if (opt ==1){
-            JOptionPane.showMessageDialog(null, "You chose Hotdog", "MENU", JOptionPane.INFORMATION_MESSAGE);
-            txtFood.setText("Hotdog");
-            txtFPrice.setText("10");
-        } else if (opt == 2){
-            JOptionPane.showMessageDialog(null, "You chose Siopai", "MENU", JOptionPane.INFORMATION_MESSAGE);
-            txtFood.setText("Siopai");
-            txtFPrice.setText("7");
+    private void btnConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmActionPerformed
+        // TODO add your handling code here:
+        int opt = Integer.parseInt(txtOpt.getText());
+        int qty = Integer.parseInt(txtQTY.getText());
+        int price = 0;
+        int total = 0;
+        int change = 0;
+        String order = "";
+        if (opt==1){
+            price = 10;
+            order = "Hotdog";
+            JOptionPane.showMessageDialog(null, "You chose Hotdog", "CAFETERIA", JOptionPane.INFORMATION_MESSAGE);
+        } else if (opt==2){
+            price = 7;
+            order = "Siomai";
+            JOptionPane.showMessageDialog(null, "You chose Siomai", "CAFETERIA", JOptionPane.INFORMATION_MESSAGE);
+        } else if (opt==3){
+            price = 20;
+            order = "Coke";
+            JOptionPane.showMessageDialog(null, "You chose Coke", "CAFETERIA", JOptionPane.INFORMATION_MESSAGE);
+        } else if (opt==4){
+            price = 15;
+            order = "Mineral Water";
+            JOptionPane.showMessageDialog(null, "You chose Mineral Water", "CAFETERIA", JOptionPane.INFORMATION_MESSAGE);
         } else {
-            JOptionPane.showMessageDialog(null, "Invalid option", "Error", JOptionPane.WARNING_MESSAGE);
-        }        
-    }//GEN-LAST:event_jButton1ActionPerformed
+            JOptionPane.showMessageDialog(null, "Choose a valid option from the menu", "ERRROR", JOptionPane.WARNING_MESSAGE);
+        }
+        total = qty * price;
+        String userInput = JOptionPane.showInputDialog(null, "Enter payment: ", "PAYMENT", JOptionPane.INFORMATION_MESSAGE);
+        int pay = Integer.parseInt(userInput);
+        if (pay < total){
+            JOptionPane.showMessageDialog(null, "Payment cannot be less that the total", "ERRROR", JOptionPane.WARNING_MESSAGE);
+        } else if (pay >= total){
+            change = pay - total;
+            
+        int receipt = JOptionPane.showConfirmDialog(null, "Payment successful"+"\nYour change is: "+change+"\nPrint Receipt", "PAYMENT", JOptionPane.YES_NO_OPTION);
+        if (receipt==JOptionPane.YES_OPTION){
+            JOptionPane.showMessageDialog(null, "ORDER SUMMARY"
+                +"----------"
+                +order+" "+qty+"x"
+                +"TOTAL: "+total
+                +"PAYMENT: "+pay
+                +"CHANGE"+change, "RECEIPT", JOptionPane.INFORMATION_MESSAGE);
+        } else if (receipt==JOptionPane.NO_OPTION) {
+            order = "";
+        } else if (receipt==JOptionPane.CANCEL_OPTION){
+            order = "";
+        }
+        int back = JOptionPane.showConfirmDialog(null, "Would you like to order again?", "Re-order", JOptionPane.YES_NO_OPTION);
+                if (back==JOptionPane.YES_OPTION){
+                    txtOpt.setText("");
+                    txtQTY.setText("");
+                } else if (back==JOptionPane.NO_OPTION){
+                    this.dispose();
+        } else {
+            JOptionPane.showMessageDialog(null, "Please input a numerical value", "ERRROR", JOptionPane.WARNING_MESSAGE);
+        }
+        }
+    }//GEN-LAST:event_btnConfirmActionPerformed
 
     /**
      * @param args the command line arguments
@@ -215,7 +224,6 @@ public class Cafeteria extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Cafeteria.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -226,8 +234,7 @@ public class Cafeteria extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnConfirm;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -236,10 +243,8 @@ public class Cafeteria extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField txtFPrice;
-    private javax.swing.JTextField txtFood;
-    private javax.swing.JTextField txtOption;
-    private javax.swing.JTextField txtQuantity;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField txtOpt;
+    private javax.swing.JTextField txtQTY;
     // End of variables declaration//GEN-END:variables
 }
