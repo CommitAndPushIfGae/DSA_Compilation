@@ -72,8 +72,10 @@ public class Prelims extends javax.swing.JFrame {
 
         jLabel10.setText("Coke");
 
+        txtFstock.setEditable(false);
         txtFstock.setText("120");
 
+        txtDstock.setEditable(false);
         txtDstock.setText("100");
 
         btnCompute.setText("COMPUTE");
@@ -186,36 +188,52 @@ public class Prelims extends javax.swing.JFrame {
         int price = 0;
         double tax = 0.12;
         double Tax = 0;
-        int total = 0;
+        double total = 0;
         double Ftotal = 0;
-        int change = 0;
+        double total2 = 0;
+        double change = 0;
         String x = "";
         String y = "";
-        int Fnew = 0;
-        int Dnew = 0;
         if (opt==1){
             price = 100;
             total = qty * price;
             Tax = total * tax;
             Ftotal = total + Tax;
-            Fnew = qty - F;
-            y = Integer.toString(Fnew);
-            x = String.format("%.2f", Ftotal);
+            total2 = total - Ftotal;
+            F = F - qty;
+            x = String.valueOf(total2);
+            y = Integer.toString(F);
             txtProd.setText("Chowfan");
             txtPrice.setText(x);
             txtFstock.setText(y);
             String userInput = JOptionPane.showInputDialog(null, "Enter payment: ", "PAYMENT", JOptionPane.INFORMATION_MESSAGE);
             int pay = Integer.parseInt(userInput);
-            if (pay < total){
+            if (pay < Ftotal){
                 JOptionPane.showMessageDialog(null, "Payment cannot be less that the total", "ERRROR", JOptionPane.WARNING_MESSAGE);
-            } else if (pay >= total){
-                change = pay - total;
+            } else if (pay >= Ftotal){
+                change = pay - Ftotal;
                 JOptionPane.showMessageDialog(null, "Payment succesful, your change is: "+change, "SUCCESS", JOptionPane.INFORMATION_MESSAGE);
             }
         } else if(opt==2){
             price = 30;
-            total = qty + price;
-            Ftotal = total / tax;
+            total = qty * price;
+            Tax = total * tax;
+            Ftotal = total + Tax;
+            total2 = total - Ftotal;
+            F = F - qty;
+            x = String.valueOf(total2);
+            y = Integer.toString(F);
+            txtProd.setText("Chowfan");
+            txtPrice.setText(x);
+            txtFstock.setText(y);
+            String userInput = JOptionPane.showInputDialog(null, "Enter payment: ", "PAYMENT", JOptionPane.INFORMATION_MESSAGE);
+            int pay = Integer.parseInt(userInput);
+            if (pay < Ftotal){
+                JOptionPane.showMessageDialog(null, "Payment cannot be less that the total", "ERRROR", JOptionPane.WARNING_MESSAGE);
+            } else if (pay >= Ftotal){
+                change = pay - Ftotal;
+                JOptionPane.showMessageDialog(null, "Payment succesful, your change is: "+change, "SUCCESS", JOptionPane.INFORMATION_MESSAGE);
+            }
         } 
     }//GEN-LAST:event_btnComputeActionPerformed
 
