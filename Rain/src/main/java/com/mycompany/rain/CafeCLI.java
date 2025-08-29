@@ -63,12 +63,13 @@ public class CafeCLI {
                 System.out.println("Total: " + total);
                 System.out.println("Enter payment:");
                 int pay = in.nextInt();
-                change = total - pay;
                 while (pay < total){
+                    System.out.println("Total: " + total);
                     System.out.println("Insufficient payment received, please try again!");
                     System.out.println("Enter payment:");
                     pay = in.nextInt();
                 }
+                change = total - pay;
                 System.out.print("Your change is: " + change);
             } else {
             System.out.println("Invalid option");
@@ -89,12 +90,12 @@ public class CafeCLI {
                 System.out.println("Total: " + total);
                 System.out.println("Enter payment:");
                 int pay = in.nextInt();
-                change = total - pay;
                 while (pay < total){
                     System.out.println("Insufficient payment received, please try again!");
                     System.out.println("Enter payment:");
                     pay = in.nextInt();
                 }
+                change = total - pay;
                 System.out.print("Your change is: " + change);
             } else if (drink ==2){
                 System.out.println("Enter quantity:");
@@ -106,12 +107,12 @@ public class CafeCLI {
                 System.out.println("Total: " + total);
                 System.out.println("Enter payment:");
                 int pay = in.nextInt();
-                change = total - pay;
                 while (pay < total){
                     System.out.println("Insufficient payment received, please try again!");
                     System.out.println("Enter payment:");
                     pay = in.nextInt();
                 }
+                change = total - pay;
                 System.out.print("Your change is: " + change);
             } else {
             System.out.println("Invalid option");
