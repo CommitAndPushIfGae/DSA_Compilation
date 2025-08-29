@@ -199,9 +199,9 @@ public class Prelims extends javax.swing.JFrame {
             total = qty * price;
             Tax = total * tax;
             Ftotal = total + Tax;
-            total2 = total - Ftotal;
+            total2 = Ftotal - total;
             F = F - qty;
-            x = String.valueOf(total2);
+            x = String.valueOf(Ftotal);
             y = Integer.toString(F);
             txtProd.setText("Chowfan");
             txtPrice.setText(x);
@@ -209,6 +209,9 @@ public class Prelims extends javax.swing.JFrame {
             String userInput = JOptionPane.showInputDialog(null, "Enter payment: ", "PAYMENT", JOptionPane.INFORMATION_MESSAGE);
             int pay = Integer.parseInt(userInput);
             if (pay < Ftotal){
+                F = F + qty;
+                y = Integer.toString(F);
+                txtFstock.setText(y);
                 JOptionPane.showMessageDialog(null, "Payment cannot be less that the total", "ERRROR", JOptionPane.WARNING_MESSAGE);
             } else if (pay >= Ftotal){
                 change = pay - Ftotal;
@@ -220,15 +223,18 @@ public class Prelims extends javax.swing.JFrame {
             Tax = total * tax;
             Ftotal = total + Tax;
             total2 = total - Ftotal;
-            F = F - qty;
-            x = String.valueOf(total2);
-            y = Integer.toString(F);
-            txtProd.setText("Chowfan");
+            D = D - qty;
+            x = String.valueOf(Ftotal);
+            y = Integer.toString(D);
+            txtProd.setText("Coke");
             txtPrice.setText(x);
             txtFstock.setText(y);
             String userInput = JOptionPane.showInputDialog(null, "Enter payment: ", "PAYMENT", JOptionPane.INFORMATION_MESSAGE);
             int pay = Integer.parseInt(userInput);
             if (pay < Ftotal){
+                D = D + qty;
+                y = Integer.toString(D);
+                txtFstock.setText(y);
                 JOptionPane.showMessageDialog(null, "Payment cannot be less that the total", "ERRROR", JOptionPane.WARNING_MESSAGE);
             } else if (pay >= Ftotal){
                 change = pay - Ftotal;

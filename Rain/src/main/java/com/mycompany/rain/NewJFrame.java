@@ -73,15 +73,19 @@ public class NewJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Student Registration Form");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(212, 6, -1, 65));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Roll no. :");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 77, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Student name :");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 117, -1, -1));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 77, 395, -1));
@@ -92,46 +96,57 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 11, -1));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Father's Name :");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 157, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Date of birth :");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 197, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Mobile no. :");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 237, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Email id :");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 277, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Password :");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 317, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Gender :");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 357, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Department :");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 397, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("Course :");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 436, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
         jLabel13.setText("Student photo :");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 476, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText("City :");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 517, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("Address :");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 585, -1, -1));
         getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 157, 395, -1));
@@ -145,28 +160,36 @@ public class NewJFrame extends javax.swing.JFrame {
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "------------------------Select Current Course------------------------", "ACT", "HM", "BSOA", "CT" }));
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 436, 395, -1));
 
+        jCheckBox1.setForeground(new java.awt.Color(0, 0, 0));
         jCheckBox1.setText("IT");
         getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(271, 398, -1, -1));
 
+        jCheckBox2.setForeground(new java.awt.Color(0, 0, 0));
         jCheckBox2.setText("CSE");
         getContentPane().add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 398, -1, -1));
 
+        jCheckBox3.setForeground(new java.awt.Color(0, 0, 0));
         jCheckBox3.setText("ECE");
         getContentPane().add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 398, -1, -1));
 
+        jCheckBox4.setForeground(new java.awt.Color(0, 0, 0));
         jCheckBox4.setText("Civil");
         getContentPane().add(jCheckBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(383, 398, -1, -1));
 
+        jCheckBox5.setForeground(new java.awt.Color(0, 0, 0));
         jCheckBox5.setText("Mech");
         getContentPane().add(jCheckBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(447, 398, -1, -1));
 
+        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton1.setText("Male");
         getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 358, -1, -1));
 
+        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
         jRadioButton2.setText("Female");
         getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(277, 358, -1, -1));
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
         jLabel16.setText("(DD-MM-YYYY)");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 197, -1, -1));
 
@@ -187,6 +210,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton2.setText("Choose File");
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 476, -1, -1));
 
+        jLabel19.setForeground(new java.awt.Color(0, 0, 0));
         jLabel19.setText("No file chosen.");
         getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 479, -1, -1));
 
