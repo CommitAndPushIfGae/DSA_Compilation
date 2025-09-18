@@ -53,7 +53,8 @@ public class CafeCLI {
                 }
                 in.nextLine();
                 change = pay - total;
-                System.out.println("Your change is: " + change);
+                String change2 = String.format("%.2f", change);
+                System.out.println("Your change is: " + change2);
                 
                 System.out.println("Would you like to print receipt? (y/n):");
                 String receipt = in.nextLine().toLowerCase();
@@ -64,7 +65,7 @@ public class CafeCLI {
                     System.out.println(" VAT              "+vat+"   ");
                     System.out.println(" TOTAL            "+total);
                     System.out.println(" AMOUNT PAID      "+pay);
-                    System.out.println(" CHANGE           "+change);
+                    System.out.println(" CHANGE           "+change2);
                     System.out.println("=========================");
                 } else if (receipt.equals("n")){
                     System.out.println("");
@@ -87,7 +88,8 @@ public class CafeCLI {
                 }
                 in.nextLine();
                 change = pay - total;
-                System.out.println("Your change is: " + change);
+                String change2 = String.format("%.2f", change);
+                System.out.println("Your change is: " + change2);
                 
                 System.out.println("Would you like to print receipt? (y/n):");
                 String receipt = in.nextLine().toLowerCase();
@@ -98,7 +100,7 @@ public class CafeCLI {
                     System.out.println(" VAT              "+vat+"   ");
                     System.out.println(" TOTAL            "+total);
                     System.out.println(" AMOUNT PAID      "+pay);
-                    System.out.println(" CHANGE           "+change);
+                    System.out.println(" CHANGE           "+change2);
                     System.out.println("=========================");
                 } else if (receipt.equals("n")){
                     System.out.println("");
@@ -129,7 +131,8 @@ public class CafeCLI {
                 }
                 in.nextLine();
                 change = pay - total;
-                System.out.println("Your change is: " + change);
+                String change2 = String.format("%.2f", change);
+                System.out.println("Your change is: " + change2);
                 
                 System.out.println("Would you like to print receipt? (y/n):");
                 String receipt = in.nextLine().toLowerCase();
@@ -140,7 +143,7 @@ public class CafeCLI {
                     System.out.println(" VAT              "+vat+"   ");
                     System.out.println(" TOTAL            "+total);
                     System.out.println(" AMOUNT PAID      "+pay);
-                    System.out.println(" CHANGE           "+change);
+                    System.out.println(" CHANGE           "+change2);
                     System.out.println("=========================");
                 } else if (receipt.equals("n")){
                     System.out.println("");
@@ -161,7 +164,8 @@ public class CafeCLI {
                     pay = in.nextInt();
                 }
                 change = pay - total;
-                System.out.println("Your change is: " + change);
+                String change2 = String.format("%.2f", change);
+                System.out.println("Your change is: " + change2);
                 
                 System.out.println("Would you like to print receipt? (y/n):");
                 String receipt = in.nextLine().toLowerCase();
@@ -172,7 +176,7 @@ public class CafeCLI {
                     System.out.println(" VAT              "+vat+"   ");
                     System.out.println(" TOTAL            "+total);
                     System.out.println(" AMOUNT PAID      "+pay);
-                    System.out.println(" CHANGE           "+change);
+                    System.out.println(" CHANGE           "+change2);
                     System.out.println("=========================");
                 } else if (receipt.equals("n")){
                     System.out.println("");
