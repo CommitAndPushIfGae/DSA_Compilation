@@ -163,6 +163,7 @@ public class CafeCLI {
                     System.out.println("Enter payment:");
                     pay = in.nextInt();
                 }
+                in.nextLine();
                 change = pay - total;
                 String change2 = String.format("%.2f", change);
                 System.out.println("Your change is: " + change2);
