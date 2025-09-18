@@ -51,8 +51,24 @@ public class CafeCLI {
                     System.out.println("Enter payment:");
                     pay = in.nextInt();
                 }
+                in.nextLine();
                 change = pay - total;
-                System.out.print("Your change is: " + change);
+                System.out.println("Your change is: " + change);
+                
+                System.out.println("Would you like to print receipt? (y/n):");
+                String receipt = in.nextLine().toLowerCase();
+                if (receipt.equals("y")){
+                System.out.println("===== R E C E I P T =====");
+                    System.out.println(" Order   Amount   Price ");
+                    System.out.println(" Siopai  "+qty+"x     ₱"+hotdot);
+                    System.out.println(" VAT              "+vat+"   ");
+                    System.out.println(" TOTAL            "+total);
+                    System.out.println(" AMOUNT PAID      "+pay);
+                    System.out.println(" CHANGE           "+change);
+                    System.out.println("=========================");
+                } else if (receipt.equals("n")){
+                    System.out.println("");
+                }
             } else if (snack ==2){
                 System.out.println("Enter quantity:");
                 int qty = in.nextInt();
@@ -69,8 +85,24 @@ public class CafeCLI {
                     System.out.println("Enter payment:");
                     pay = in.nextInt();
                 }
-                change = total - pay;
-                System.out.print("Your change is: " + change);
+                in.nextLine();
+                change = pay - total;
+                System.out.println("Your change is: " + change);
+                
+                System.out.println("Would you like to print receipt? (y/n):");
+                String receipt = in.nextLine().toLowerCase();
+                if (receipt.equals("y")){
+                System.out.println("===== R E C E I P T =====");
+                    System.out.println(" Order   Amount   Price ");
+                    System.out.println(" Siopai  "+qty+"x     ₱"+siopai);
+                    System.out.println(" VAT              "+vat+"   ");
+                    System.out.println(" TOTAL            "+total);
+                    System.out.println(" AMOUNT PAID      "+pay);
+                    System.out.println(" CHANGE           "+change);
+                    System.out.println("=========================");
+                } else if (receipt.equals("n")){
+                    System.out.println("");
+                }
             } else {
             System.out.println("Invalid option");
             }
@@ -95,8 +127,24 @@ public class CafeCLI {
                     System.out.println("Enter payment:");
                     pay = in.nextInt();
                 }
-                change = total - pay;
-                System.out.print("Your change is: " + change);
+                in.nextLine();
+                change = pay - total;
+                System.out.println("Your change is: " + change);
+                
+                System.out.println("Would you like to print receipt? (y/n):");
+                String receipt = in.nextLine().toLowerCase();
+                if (receipt.equals("y")){
+                System.out.println("===== R E C E I P T =====");
+                    System.out.println(" Order   Amount   Price ");
+                    System.out.println(" Siopai  "+qty+"x     ₱"+cok);
+                    System.out.println(" VAT              "+vat+"   ");
+                    System.out.println(" TOTAL            "+total);
+                    System.out.println(" AMOUNT PAID      "+pay);
+                    System.out.println(" CHANGE           "+change);
+                    System.out.println("=========================");
+                } else if (receipt.equals("n")){
+                    System.out.println("");
+                }
             } else if (drink ==2){
                 System.out.println("Enter quantity:");
                 int qty = in.nextInt();
@@ -112,8 +160,23 @@ public class CafeCLI {
                     System.out.println("Enter payment:");
                     pay = in.nextInt();
                 }
-                change = total - pay;
-                System.out.print("Your change is: " + change);
+                change = pay - total;
+                System.out.println("Your change is: " + change);
+                
+                System.out.println("Would you like to print receipt? (y/n):");
+                String receipt = in.nextLine().toLowerCase();
+                if (receipt.equals("y")){
+                System.out.println("===== R E C E I P T =====");
+                    System.out.println(" Order   Amount   Price ");
+                    System.out.println(" Siopai  "+qty+"x     ₱"+spit);
+                    System.out.println(" VAT              "+vat+"   ");
+                    System.out.println(" TOTAL            "+total);
+                    System.out.println(" AMOUNT PAID      "+pay);
+                    System.out.println(" CHANGE           "+change);
+                    System.out.println("=========================");
+                } else if (receipt.equals("n")){
+                    System.out.println("");
+                }
             } else {
             System.out.println("Invalid option");
             }
