@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
  */
-package com.mycompany.rain;
+package midterms;
 import java.util.Scanner;
 /**
  *
@@ -19,12 +19,10 @@ public class CafeCLI {
         int siopai = 10;
         int cok = 20;
         int spit = 25;
-        int sub = 0;
         double change = 0;
         double total = 0;
         double vat = 0;
         double tax = 0.12;
-        
         System.out.println("CAFETERIA");
         System.out.println("[1] - Snacks");
         System.out.println("[2] - Drinks");
@@ -39,7 +37,7 @@ public class CafeCLI {
             if (snack ==1){
                 System.out.println("Enter quantity:");
                 int qty = in.nextInt();
-                sub = qty * hotdot;
+                int sub = qty * hotdot;
                 vat = sub * tax;
                 total = sub + vat;
                 System.out.println("Substotal: " + sub);
@@ -55,7 +53,6 @@ public class CafeCLI {
                 change = pay - total;
                 String change2 = String.format("%.2f", change);
                 System.out.println("Your change is: " + change2);
-                
                 System.out.println("Would you like to print receipt? (y/n):");
                 String receipt = in.nextLine().toLowerCase();
                 if (receipt.equals("y")){
@@ -73,7 +70,7 @@ public class CafeCLI {
             } else if (snack ==2){
                 System.out.println("Enter quantity:");
                 int qty = in.nextInt();
-                sub = qty * siopai;
+                int sub = qty * siopai;
                 vat = sub * tax;
                 total = sub + vat;
                 System.out.println("Substotal: " + sub);
@@ -117,7 +114,7 @@ public class CafeCLI {
             if (drink ==1){
                 System.out.println("Enter quantity:");
                 int qty = in.nextInt();
-                sub = qty * cok;
+                int sub = qty * cok;
                 vat = sub * tax;
                 total = sub + vat;
                 System.out.println("Substotal: " + sub);
@@ -133,7 +130,6 @@ public class CafeCLI {
                 change = pay - total;
                 String change2 = String.format("%.2f", change);
                 System.out.println("Your change is: " + change2);
-                
                 System.out.println("Would you like to print receipt? (y/n):");
                 String receipt = in.nextLine().toLowerCase();
                 if (receipt.equals("y")){
@@ -151,7 +147,7 @@ public class CafeCLI {
             } else if (drink ==2){
                 System.out.println("Enter quantity:");
                 int qty = in.nextInt();
-                sub = qty * spit;
+                int sub = qty * spit;
                 vat = sub * tax;
                 total = sub + vat;
                 System.out.println("Substotal: " + sub);
@@ -167,7 +163,6 @@ public class CafeCLI {
                 change = pay - total;
                 String change2 = String.format("%.2f", change);
                 System.out.println("Your change is: " + change2);
-                
                 System.out.println("Would you like to print receipt? (y/n):");
                 String receipt = in.nextLine().toLowerCase();
                 if (receipt.equals("y")){
